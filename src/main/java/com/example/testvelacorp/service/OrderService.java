@@ -3,7 +3,7 @@ package com.example.testvelacorp.service;
 import com.example.testvelacorp.constant.ApiResponseCode;
 import com.example.testvelacorp.dto.OrderDetailDto;
 import com.example.testvelacorp.dto.OrderDto;
-import com.example.testvelacorp.dto.response.CommonResponseDto;
+import com.example.testvelacorp.dto.CommonResponseDto;
 import com.example.testvelacorp.exception.HandleException;
 import com.example.testvelacorp.modal.Order;
 import com.example.testvelacorp.repository.OrderDetailRepository;
@@ -45,7 +45,7 @@ public class OrderService {
             throw new HandleException(ApiResponseCode.ENTITY_NOT_FOUND);
         }
         OrderDto orderDto = orderMapper.toDto(order.get());
-        List<OrderDetailDto> orderDetails = orderDetailRepository.findByIdIdOrder(1L).stream().map(orderDetailMapper::toDto).collect(Collectors.toList());
+        List<OrderDetailDto> orderDetails = orderDetailRepository.findByIdIdOrder(id).stream().map(orderDetailMapper::toDto).collect(Collectors.toList());
         orderDto.setOrderDetails(orderDetails);
         return orderDto;
     }

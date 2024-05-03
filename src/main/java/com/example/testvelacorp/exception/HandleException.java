@@ -1,7 +1,7 @@
 package com.example.testvelacorp.exception;
 
 
-import com.example.testvelacorp.dto.response.IApiResponse;
+import com.example.testvelacorp.dto.IApiResponse;
 
 public class HandleException  extends RuntimeException{
     protected String code;

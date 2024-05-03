@@ -2,7 +2,7 @@ package com.example.testvelacorp.service;
 
 import com.example.testvelacorp.constant.ApiResponseCode;
 import com.example.testvelacorp.dto.ProductDto;
-import com.example.testvelacorp.dto.response.CommonResponseDto;
+import com.example.testvelacorp.dto.CommonResponseDto;
 import com.example.testvelacorp.exception.HandleException;
 import com.example.testvelacorp.modal.Product;
 import com.example.testvelacorp.repository.ProductRepository;

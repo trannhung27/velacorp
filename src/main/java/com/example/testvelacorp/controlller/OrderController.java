@@ -1,7 +1,7 @@
 package com.example.testvelacorp.controlller;
 
 import com.example.testvelacorp.dto.OrderDto;
-import com.example.testvelacorp.dto.response.CommonResponseDto;
+import com.example.testvelacorp.dto.CommonResponseDto;
 import com.example.testvelacorp.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

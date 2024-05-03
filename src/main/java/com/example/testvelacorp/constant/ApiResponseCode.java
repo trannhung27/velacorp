@@ -1,6 +1,6 @@
 package com.example.testvelacorp.constant;
 
-import com.example.testvelacorp.dto.response.IApiResponse;
+import com.example.testvelacorp.dto.IApiResponse;
 
 public enum ApiResponseCode implements IApiResponse {
     BAD_REQUEST("400", "BAD_REQUEST"),

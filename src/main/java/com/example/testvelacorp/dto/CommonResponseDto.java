@@ -1,4 +1,4 @@
-package com.example.testvelacorp.dto.response;
+package com.example.testvelacorp.dto;
 
 import lombok.Builder;
 import lombok.Data;
